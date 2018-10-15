@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<container xmlns="http://symfony.com/schema/dic/services"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
+
+    <services>
+        <service id="kna_bem.twig_extension" class="Kna\BEMBundle\Twig\Extension\BEMExtension" public="false">
+            <argument type="service" id="service_container" />
+            <call method="setBlockFunctionName">
+                <argument>%kna_bem.block_function_name%</argument>
+            </call>
+            <tag name="twig.extension" />
+        </service>
+
+    </services>
+
+</container>

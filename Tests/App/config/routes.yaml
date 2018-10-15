@@ -1,0 +1,3 @@
+index:
+    path: /
+    controller: Kna\BEMBundle\Tests\App\Controller\DefaultController::index
