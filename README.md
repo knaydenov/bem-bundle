@@ -25,3 +25,10 @@ kna_bem:
     <div class="{{ b('card').e('content').m('hidden').addClass('no-js') }}">Some content</div>
 </div>
 ```
+
+## Running tests
+
+```
+docker-compose run --rm php ./vendor/bin/simple-phpunit
+ 
+```
