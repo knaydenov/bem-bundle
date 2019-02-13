@@ -1,5 +1,7 @@
 # KnaBEMBundle
 
+[![Build Status](https://travis-ci.org/knaydenov/bem-bundle.svg?branch=master)](https://travis-ci.org/knaydenov/bem-bundle)
+
 This bundle provides helpers for BEM classes generation.
 
 ## Installation
