@@ -16,3 +16,5 @@ before_install:
 - composer install
 - docker-compose --version
 - phpunit --version
+
+script: ./vendor/bin/simple-phpunit
