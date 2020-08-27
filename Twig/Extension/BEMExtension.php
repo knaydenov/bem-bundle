@@ -4,6 +4,7 @@ namespace Kna\BEMBundle\Twig\Extension;
 
 use Kna\BEMBundle\BEM\Block;
 use Twig\Extension\AbstractExtension;
+use Twig\TwigFunction;
 
 class BEMExtension extends AbstractExtension
 {
@@ -18,12 +19,12 @@ class BEMExtension extends AbstractExtension
     }
 
     /**
-     * @return array|\Twig_Function[]
+     * @return array|TwigFunction[]
      */
     public function getFunctions()
     {
         return [
-            new \Twig_SimpleFunction($this->blockFunctionName, [$this, 'b'], ['is_safe' => ['all'] ]),
+            new TwigFunction($this->blockFunctionName, [$this, 'b'], ['is_safe' => ['all'] ]),
         ];
     }
 
