@@ -1,7 +1,6 @@
 <?php
 
 use Kna\BEMBundle\Tests\App\Kernel;
-use Symfony\Component\Debug\Debug;
 use Symfony\Component\HttpFoundation\Request;
 
 require __DIR__.'/../../../vendor/autoload.php';
@@ -11,8 +10,6 @@ $debug = (bool) ($_SERVER['APP_DEBUG'] ?? $_ENV['APP_DEBUG'] ?? ('prod' !== $env
 
 if ($debug) {
     umask(0000);
-
-    Debug::enable();
 }
 
 umask(0000);
