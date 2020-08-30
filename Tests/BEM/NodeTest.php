@@ -27,7 +27,7 @@ class NodeTest extends TestCase
         return $node;
     }
 
-    public function setUp()
+    protected function setUp(): void
     {
         $this->node = $this->createNode('block');
     }

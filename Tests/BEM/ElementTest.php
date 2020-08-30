@@ -41,7 +41,7 @@ class ElementTest extends TestCase
         return $elem;
     }
 
-    public function setUp()
+    protected function setUp(): void
     {
         $this->block = $this->createBlock('block');
         $this->element = $this->createElement($this->block, 'elem');

@@ -27,7 +27,7 @@ class BlockTest extends TestCase
         return $block;
     }
 
-    public function setUp()
+    protected function setUp(): void
     {
         $this->block = $this->createBlock('block');
     }
